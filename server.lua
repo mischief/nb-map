@@ -8,7 +8,7 @@ require "xavante.cgiluahandler"
 require "xavante.redirecthandler"
 
 -- Define here where Xavante HTTP documents scripts are located
-local rootDir = posix.getpwd()
+local rootDir = posix.getcwd()
 local webDir = 'www'
 
 package.path = package.path .. ";" .. rootDir .. "/?.lua"
