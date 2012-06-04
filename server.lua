@@ -1,5 +1,3 @@
-require "nbmb"
-
 require "posix"
 
 require "xavante"
