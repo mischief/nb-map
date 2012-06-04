@@ -1,13 +1,17 @@
 require "nbmb"
 
+require "posix"
+
 require "xavante"
 require "xavante.filehandler"
 require "xavante.cgiluahandler"
 require "xavante.redirecthandler"
 
 -- Define here where Xavante HTTP documents scripts are located
---local webDir = XAVANTE_WEB
+local rootDir = posix.getpwd()
 local webDir = 'www'
+
+package.path = package.path .. ";" .. rootDir .. "/?.lua"
 
 local simplerules = {
 

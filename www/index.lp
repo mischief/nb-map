@@ -2,7 +2,6 @@
   require "sajax"
   cjson = require "cjson"
 
-  package.path = package.path .. ";/home/ubuntu/luaweb/?.lua"
   nbmb = require "nbmb"
 
   function get_email_by_id_json(id)
